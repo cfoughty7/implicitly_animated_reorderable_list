@@ -156,7 +156,7 @@ class ImplicitlyAnimatedReorderableList<E extends Object>
   const ImplicitlyAnimatedReorderableList({
     Key? key,
     required List<E> items,
-    required AnimatedItemBuilder<Reorderable, E> itemBuilder,
+    required AnimatingItemBuilder<Reorderable, E> itemBuilder,
     required ItemDiffUtil<E> areItemsTheSame,
     RemovedItemBuilder<Reorderable, E>? removeItemBuilder,
     UpdatedItemBuilder<Reorderable, E>? updateItemBuilder,
@@ -227,7 +227,7 @@ class ImplicitlyAnimatedReorderableList<E extends Object>
   ImplicitlyAnimatedReorderableList.separated({
     Key? key,
     required List<E> items,
-    required AnimatedItemBuilder<Reorderable, E> itemBuilder,
+    required AnimatingItemBuilder<Reorderable, E> itemBuilder,
     required ItemDiffUtil<E> areItemsTheSame,
     required NullableIndexedWidgetBuilder separatorBuilder,
     RemovedItemBuilder<Reorderable, E>? removeItemBuilder,
